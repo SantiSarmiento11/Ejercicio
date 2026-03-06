@@ -1,0 +1,114 @@
+/* ============================================
+   MUSICSTREAM — main.css
+   Reset · Variables · Typography · Imports
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap');
+
+@import "layout.css";
+@import "components.css";
+@import "views/store.css";
+
+/* ─── CSS Reset ─────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+img, svg { display: block; max-width: 100%; }
+
+a { text-decoration: none; color: inherit; }
+
+ul, ol { list-style: none; }
+
+button { border: none; background: none; cursor: pointer; font: inherit; }
+
+input { border: none; outline: none; background: none; font: inherit; }
+
+/* ─── Design Tokens ──────────────────────────── */
+:root {
+  /* Colors */
+  --bg-base:        #0b1424;
+  --bg-surface:     #111c2e;
+  --bg-elevated:    #162035;
+  --bg-overlay:     #1c2a3f;
+
+  --accent-primary: #2d6cdf;
+  --accent-hover:   #3d7ef0;
+  --accent-muted:   rgba(45, 108, 223, 0.15);
+
+  --text-primary:   #ffffff;
+  --text-secondary: #9aa4b2;
+  --text-muted:     #5a6478;
+
+  --border-subtle:  rgba(255, 255, 255, 0.06);
+  --border-card:    rgba(255, 255, 255, 0.08);
+
+  --hero-gradient: linear-gradient(
+    135deg,
+    #e8710a 0%,
+    #f5a623 30%,
+    #f5c842 60%,
+    #fde68a 100%
+  );
+
+  /* Spacing */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+
+  /* Radius */
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   16px;
+  --radius-xl:   20px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-card:  0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-hover: 0 8px 32px rgba(0, 0, 0, 0.6);
+
+  /* Typography */
+  --font-body:    'DM Sans', sans-serif;
+  --font-display: 'Syne', sans-serif;
+
+  /* Transitions */
+  --transition: 0.2s ease;
+  --transition-slow: 0.35s ease;
+
+  /* Layout */
+  --sidebar-width:   160px;
+  --header-height:   60px;
+}
+
+/* ─── Base Typography ────────────────────────── */
+body {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-primary);
+  background-color: var(--bg-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+}
+
+h1 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; }
+h2 { font-size: 1.125rem; font-weight: 700; }
+h3 { font-size: 0.9rem; font-weight: 600; }
+
+p { color: var(--text-secondary); font-size: 0.875rem; }
+
+small { font-size: 0.75rem; color: var(--text-muted); }

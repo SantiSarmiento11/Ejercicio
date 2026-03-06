@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MusicStream — Store</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- ═══════════════════════════════════════
+         HEADER
+    ═══════════════════════════════════════ -->
+    <header class="header" role="banner">
+
+      <!-- Logo -->
+      <a href="index.html" class="header__logo" aria-label="MusicStream Home">
+        <svg class="header__logo-icon" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="2" y="14" width="5" height="12" rx="1.5" fill="#2d6cdf"/>
+          <rect x="9" y="8" width="5" height="18" rx="1.5" fill="#2d6cdf"/>
+          <rect x="16" y="4" width="5" height="22" rx="1.5" fill="#2d6cdf" opacity="0.75"/>
+          <rect x="23" y="10" width="3" height="16" rx="1.5" fill="#2d6cdf" opacity="0.5"/>
+        </svg>
+        <span class="header__logo-text">MusicStream</span>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="header__nav" aria-label="Main navigation">
+        <a href="#" class="header__nav-link">Discover</a>
+        <a href="#" class="header__nav-link">Library</a>
+        <a href="index.html" class="header__nav-link header__nav-link--active" aria-current="page">Store</a>
+      </nav>
+
+      <!-- Search -->
+      <div class="header__search" role="search">
+        <svg class="header__search-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="8.5" cy="8.5" r="5.75" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M13 13l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <input
+          type="search"
+          placeholder="Artists, albums, tracks"
+          aria-label="Search artists, albums, tracks"
+        />
+      </div>
+
+      <!-- User Avatar -->
+      <button class="header__avatar" aria-label="User profile">
+        <img
+          src="https://i.pravatar.cc/68?img=12"
+          alt="User avatar"
+          width="34"
+          height="34"
+          loading="lazy"
+        />
+      </button>
+
+    </header>
+
+    <!-- ═══════════════════════════════════════
+         SIDEBAR
+    ═══════════════════════════════════════ -->
+    <aside class="sidebar" role="complementary" aria-label="Store categories">
+
+      <p class="sidebar__label">Categories</p>
+
+      <nav class="sidebar__nav" aria-label="Category navigation">
+
+        <a href="#" class="sidebar__nav-item sidebar__nav-item--active" aria-current="true">
+          <svg class="sidebar__nav-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M10 6v4l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          New Releases
+        </a>
+
+        <a href="#" class="sidebar__nav-item">
+          <svg class="sidebar__nav-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M4 4h4v4H4zM4 12h4v4H4zM12 4h4v4h-4zM12 12h4v4h-4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+          Genres
+        </a>
+
+        <a href="#" class="sidebar__nav-item">
+          <svg class="sidebar__nav-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <polyline points="2,14 7,8 11,11 16,5 18,7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Top Charts
+        </a>
+
+        <a href="#" class="sidebar__nav-item">
+          <svg class="sidebar__nav-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M4 16.5c0-2.5 2-3.5 6-3.5s6 1 6 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="10" cy="7" r="3.5" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          Artists
+        </a>
+
+      </nav>
+    </aside>
+
+    <!-- ═══════════════════════════════════════
+         MAIN CONTENT
+    ═══════════════════════════════════════ -->
+    <main class="main" id="main-content">
+      <div class="main__inner">
+
+        <!-- ── Hero Banner ───────────────────── -->
+        <section class="hero" aria-label="Editor's Pick">
+          <div class="hero__bg" aria-hidden="true"></div>
+          <div class="hero__content">
+            <p class="hero__eyebrow">Editor's Pick</p>
+            <h1 class="hero__title">The new album from Solar Flare</h1>
+            <a href="#" class="hero__btn">Buy Now — $14.99</a>
+          </div>
+        </section>
+
+        <!-- ── New Albums This Week ───────────── -->
+        <section class="section" aria-labelledby="albums-title">
+          <div class="section-header">
+            <h2 class="section-header__title" id="albums-title">New Albums This Week</h2>
+            <a href="#" class="section-header__link">See all</a>
+          </div>
+
+          <div class="albums-grid">
+
+            <!-- Album 1 -->
+            <article class="card album-card">
+              <div class="card__artwork artwork-echoes">
+                <img
+                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop&auto=format"
+                  alt="Echoes in Time album artwork"
+                  loading="lazy"
+                  width="400"
+                  height="400"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Echoes in Time</h3>
+                <p class="card__artist">The Wanderers</p>
+                <button class="btn btn--price" aria-label="Buy Echoes in Time for $9.99">$9.99</button>
+              </div>
+            </article>
+
+            <!-- Album 2 -->
+            <article class="card album-card">
+              <div class="card__artwork artwork-midnight">
+                <img
+                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop&auto=format"
+                  alt="Midnight Drive album artwork"
+                  loading="lazy"
+                  width="400"
+                  height="400"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Midnight Drive</h3>
+                <p class="card__artist">Synthwave Dreams</p>
+                <button class="btn btn--price" aria-label="Buy Midnight Drive for $12.99">$12.99</button>
+              </div>
+            </article>
+
+            <!-- Album 3 -->
+            <article class="card album-card">
+              <div class="card__artwork artwork-citylights">
+                <img
+                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=400&fit=crop&auto=format"
+                  alt="City Lights album artwork"
+                  loading="lazy"
+                  width="400"
+                  height="400"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">City Lights</h3>
+                <p class="card__artist">Neon Bloom</p>
+                <button class="btn btn--price" aria-label="Buy City Lights for $9.99">$9.99</button>
+              </div>
+            </article>
+
+            <!-- Album 4 -->
+            <article class="card album-card">
+              <div class="card__artwork artwork-lost">
+                <img
+                  src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=400&fit=crop&auto=format"
+                  alt="Lost in Sound album artwork"
+                  loading="lazy"
+                  width="400"
+                  height="400"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Lost in Sound</h3>
+                <p class="card__artist">Acoustic Sessions</p>
+                <button class="btn btn--price" aria-label="Buy Lost in Sound for $7.99">$7.99</button>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- ── Top Selling Tracks ─────────────── -->
+        <section class="section" aria-labelledby="tracks-title">
+          <div class="section-header">
+            <h2 class="section-header__title" id="tracks-title">Top Selling Tracks</h2>
+            <a href="#" class="section-header__link">See all</a>
+          </div>
+
+          <div class="tracks-grid">
+
+            <!-- Track 1 -->
+            <article class="card track-card">
+              <div class="card__artwork artwork-starlight">
+                <img
+                  src="https://images.unsplash.com/photo-1502933691298-84fc14542831?w=400&h=400&fit=crop&auto=format"
+                  alt="Starlight track artwork"
+                  loading="lazy"
+                  width="400"
+                  height="400"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Starlight</h3>
+                <p class="card__artist">Cosmic Echo</p>
+                <button class="btn btn--price" aria-label="Buy Starlight for $1.29">$1.29</button>
+              </div>
+            </article>
+
+            <!-- Track 2 -->
+            <article class="card track-card">
+              <div class="card__artwork artwork-ocean">
+                <img
+                  src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=400&h=400&fit=crop&auto=format"
+                  alt="Ocean Deep track artwork"
+                  loading="lazy"
+                  width="400"
+                  height="400"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Ocean Deep</h3>
+                <p class="card__artist">Aria Blue</p>
+                <button class="btn btn--price" aria-label="Buy Ocean Deep for $1.29">$1.29</button>
+              </div>
+            </article>
+
+            <!-- Track 3 -->
+            <article class="card track-card">
+              <div class="card__artwork artwork-firefly">
+                <img
+                  src="https://images.unsplash.com/photo-1499346030926-9a72daac6c63?w=400&h=400&fit=crop&auto=format"
+                  alt="Firefly track artwork"
+                  loading="lazy"
+                  width="400"
+                  height="400"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Firefly</h3>
+                <p class="card__artist">The Night Owls</p>
+                <button class="btn btn--price" aria-label="Buy Firefly for $0.99">$0.99</button>
+              </div>
+            </article>
+
+            <!-- Track 4 -->
+            <article class="card track-card">
+              <div class="card__artwork artwork-rushhour">
+                <img
+                  src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400&h=400&fit=crop&auto=format"
+                  alt="Rush Hour track artwork"
+                  loading="lazy"
+                  width="400"
+                  height="400"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Rush Hour</h3>
+                <p class="card__artist">Urban Groove</p>
+                <button class="btn btn--price" aria-label="Buy Rush Hour for $1.29">$1.29</button>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+      </div><!-- /.main__inner -->
+    </main>
+
+  </div><!-- /.app -->
+</body>
+</html>
