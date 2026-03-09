@@ -7,10 +7,9 @@ A dark-mode music streaming & store interface built with semantic HTML5 and modu
 ```
 music-stream-app/
 ├── css/
-│   ├── main.css            # Reset, variables, typography, imports
-│   ├── base/
-│   │   ├── layout.css      # Grid, Header, Sidebar, Main
-│   │   └── components.css  # Buttons, Cards, Section headers
+│   ├── main.css            # Reset, variables, typography, imports 
+│   ├── layout.css          # Grid, Header, Sidebar, Main
+│   ├── components.css      # Buttons, Cards, Section headers
 │   └── views/
 │       ├── store.css       # Hero banner, Albums grid, Tracks grid
 │       ├── player.css      # (reserved)
