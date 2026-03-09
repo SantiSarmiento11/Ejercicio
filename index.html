@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MusicStream — Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/layout.css" />
   <link rel="stylesheet" href="css/components.css" />
@@ -14,10 +17,14 @@
   <div class="app">
 
     <header class="header" role="banner">
-
       <a href="index.html" class="header__logo" aria-label="MusicStream Home">
-        <img width="30" src="./assets/icons/1.1.webp" class="header__logo-icon" aria-hidden="true">
-        <span class="header__logo-text">White A-Music</span>
+        <svg class="header__logo-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="2" y="4" width="3" height="16" rx="1.5" fill="#3b82f6"/>
+          <rect x="7" y="7" width="3" height="13" rx="1.5" fill="#3b82f6"/>
+          <rect x="12" y="2" width="3" height="18" rx="1.5" fill="#3b82f6"/>
+          <rect x="17" y="6" width="3" height="14" rx="1.5" fill="#3b82f6"/>
+        </svg>
+        <span class="header__logo-text">MusicStream</span>
       </a>
 
       <nav class="header__nav" aria-label="Main navigation">
@@ -27,52 +34,36 @@
       </nav>
 
       <div class="header__search" role="search">
-        <span class="header__search-icon" aria-hidden="true">🔍</span>
-        <input
-          type="search"
-          placeholder="Artists, albums, tracks"
-          aria-label="Search artists, albums, tracks"
-        />
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" class="header__search-icon">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+        <input type="search" placeholder="Artists, albums, tracks" aria-label="Search artists, albums, tracks" />
       </div>
 
-      <a class="header__avatar" aria-label="User profile">
-        <img
-          src="./assets/img/WhatsApp Image 2026-03-08 at 6.40.15 PM.jpeg"
-          alt="User avatar"
-          width="34"
-          height="34"
-          loading="lazy"
-        />
-      <a>
-
+      <a href="#" class="header__avatar" aria-label="User profile">
+        <img src="./assets/img/WhatsApp Image 2026-03-08 at 6.40.15 PM.jpeg" alt="User avatar" width="34" height="34" loading="lazy" />
+      </a>
     </header>
 
     <aside class="sidebar" role="complementary" aria-label="Store categories">
-
       <p class="sidebar__label">Categories</p>
-
       <nav class="sidebar__nav" aria-label="Category navigation">
-
         <a href="#" class="sidebar__nav-item sidebar__nav-item--active" aria-current="true">
-          <span class="sidebar__nav-icon" aria-hidden="true">🕐</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           New Releases
         </a>
-
         <a href="#" class="sidebar__nav-item">
-          <span class="sidebar__nav-icon" aria-hidden="true">▦</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
           Genres
         </a>
-
         <a href="#" class="sidebar__nav-item">
-          <span class="sidebar__nav-icon" aria-hidden="true">📈</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
           Top Charts
         </a>
-
         <a href="#" class="sidebar__nav-item">
-          <span class="sidebar__nav-icon" aria-hidden="true">👤</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
           Artists
         </a>
-
       </nav>
     </aside>
 
@@ -81,14 +72,12 @@
 
         <section class="hero" aria-label="Editor's Pick">
           <div class="hero__bg" aria-hidden="true">
-            <img src="./assets/img/4.jpg" width="1300" height="300">           
+            <img src="./assets/img/4.jpg" alt="" width="1300" height="300" />
           </div>
-          
           <div class="hero__content">
             <p class="hero__eyebrow">Editor's Pick</p>
             <h1 class="hero__title">The new album from Solar Flare</h1>
             <a href="album-detail.html" class="hero__btn">Buy Now — $14.99</a>
-
           </div>
         </section>
 
@@ -97,18 +86,11 @@
             <h2 class="section-header__title" id="albums-title">New Albums This Week</h2>
             <a href="#" class="section-header__link">See all</a>
           </div>
-
           <div class="albums-grid">
 
             <a href="album-detail.html" class="card album-card">
-              <div class="card__artwork artwork-echoes">
-                <img
-                  src="./assets/img/2.jpg"
-                  alt="Echoes in Time album artwork"
-                  loading="lazy"
-                  width="400"
-                  height="400"
-                />
+              <div class="card__artwork">
+                <img src="./assets/img/2.jpg" alt="La vida del artista album artwork" loading="lazy" />
               </div>
               <div class="card__body">
                 <h3 class="card__title">La vida del artista</h3>
@@ -118,14 +100,8 @@
             </a>
 
             <a href="album-detail.html" class="card album-card">
-              <div class="card__artwork artwork-midnight">
-                <img
-                  src="./assets/img/3.jpg"
-                  alt="Midnight Drive album artwork"
-                  loading="lazy"
-                  width="400"
-                  height="400"
-                />
+              <div class="card__artwork">
+                <img src="./assets/img/3.jpg" alt="La voz album artwork" loading="lazy" />
               </div>
               <div class="card__body">
                 <h3 class="card__title">La voz</h3>
@@ -135,14 +111,8 @@
             </a>
 
             <a href="album-detail.html" class="card album-card">
-              <div class="card__artwork artwork-citylights">
-                <img
-                  src="./assets/img/10.avif"
-                  alt="City Lights album artwork"
-                  loading="lazy"
-                  width="400"
-                  height="400"
-                />
+              <div class="card__artwork">
+                <img src="./assets/img/10.avif" alt="De nuevo con mi gente album artwork" loading="lazy" />
               </div>
               <div class="card__body">
                 <h3 class="card__title">De nuevo con mi gente</h3>
@@ -152,14 +122,8 @@
             </a>
 
             <a href="album-detail.html" class="card album-card">
-              <div class="card__artwork artwork-lost">
-                <img
-                  src="./assets/img/5.jpg"
-                  alt="Lost in Sound album artwork"
-                  loading="lazy"
-                  width="400"
-                  height="400"
-                />
+              <div class="card__artwork">
+                <img src="./assets/img/5.jpg" alt="El ultimo baile album artwork" loading="lazy" />
               </div>
               <div class="card__body">
                 <h3 class="card__title">El ultimo baile</h3>
@@ -176,18 +140,11 @@
             <h2 class="section-header__title" id="tracks-title">Top Selling Tracks</h2>
             <a href="#" class="section-header__link">See all</a>
           </div>
-
           <div class="tracks-grid">
 
             <a href="player.html" class="card track-card">
-              <div class="card__artwork artwork-starlight">
-                <img
-                  src="./assets/img/6.avif"
-                  alt="Starlight track artwork"
-                  loading="lazy"
-                  width="400"
-                  height="400"
-                />
+              <div class="card__artwork">
+                <img src="./assets/img/6.avif" alt="El original track artwork" loading="lazy" />
               </div>
               <div class="card__body">
                 <h3 class="card__title">El original</h3>
@@ -197,31 +154,19 @@
             </a>
 
             <a href="player.html" class="card track-card">
-              <div class="card__artwork artwork-ocean">
-                <img
-                  src="./assets/img/7.jpg"
-                  alt="Ocean Deep track artwork"
-                  loading="lazy"
-                  width="400"
-                  height="400"
-                />
+              <div class="card__artwork">
+                <img src="./assets/img/7.jpg" alt="Intruso track artwork" loading="lazy" />
               </div>
               <div class="card__body">
                 <h3 class="card__title">Intruso</h3>
                 <p class="card__artist">Silvestre Dangond</p>
-                <span class="btn btn--price">$0.1</span>
+                <span class="btn btn--price">$0.10</span>
               </div>
             </a>
 
             <a href="player.html" class="card track-card">
-              <div class="card__artwork artwork-firefly">
-                <img
-                  src="./assets/img/8.jpg"
-                  alt="Firefly track artwork"
-                  loading="lazy"
-                  width="400"
-                  height="400"
-                />
+              <div class="card__artwork">
+                <img src="./assets/img/8.jpg" alt="El ultimo baile track artwork" loading="lazy" />
               </div>
               <div class="card__body">
                 <h3 class="card__title">El ultimo baile</h3>
@@ -231,14 +176,8 @@
             </a>
 
             <a href="player.html" class="card track-card">
-              <div class="card__artwork artwork-rushhour">
-                <img
-                  src="./assets/img/9.jpg"
-                  alt="Rush Hour track artwork"
-                  loading="lazy"
-                  width="400"
-                  height="400"
-                />
+              <div class="card__artwork">
+                <img src="./assets/img/9.jpg" alt="Ponte a la moda track artwork" loading="lazy" />
               </div>
               <div class="card__body">
                 <h3 class="card__title">Ponte a la moda</h3>
